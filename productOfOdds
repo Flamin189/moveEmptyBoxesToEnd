@@ -1,0 +1,23 @@
+let M = 1;
+let N = 10;
+
+if (M > N) {
+  console.log("M should be less than or equal to N");
+} else {
+  let product = 1;
+  let hasOdd = false;
+
+  for (let i = M; i <= N; i++) {
+    if (i % 2 !== 0) {
+      product *= i;
+      hasOdd = true;
+    }
+  }
+
+
+  if (hasOdd) {
+    console.log("Product of all odd numbers:", product);
+  } else {
+    console.log(1);
+  }
+}
